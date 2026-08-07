@@ -210,6 +210,13 @@ nav a:hover { color: var(--accent); }
   font-size: 0.95rem;
 }
 
+/* Link accessibility */
+
+p a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* ---------------------------------------
    Footer
 --------------------------------------- */

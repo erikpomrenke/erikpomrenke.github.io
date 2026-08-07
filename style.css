@@ -1,0 +1,211 @@
+/* ---------------------------------------
+   Design tokens — change these first
+--------------------------------------- */
+:root {
+  --bg: #f7f5f0;
+  --ink: #1c2321;
+  --ink-soft: #565f5c;
+  --accent: #3c6e5e;
+  --accent-soft: #dce7e2;
+  --line: #d8d4c9;
+
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Courier New', monospace;
+
+  --wrap: 780px;
+}
+
+/* ---------------------------------------
+   Reset
+--------------------------------------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------------------------------------
+   Header
+--------------------------------------- */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+nav a {
+  color: var(--ink);
+  margin-left: 28px;
+  font-size: 0.95rem;
+}
+nav a:hover { color: var(--accent); }
+
+/* ---------------------------------------
+   Hero
+--------------------------------------- */
+.hero {
+  padding: 96px 24px 72px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero-sub {
+  max-width: 46ch;
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+/* ---------------------------------------
+   Sections
+--------------------------------------- */
+.section {
+  padding: 64px 24px;
+  border-top: 1px solid var(--line);
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+}
+
+/* Work grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 28px;
+}
+
+.card-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--accent-soft);
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+/* About */
+.about p {
+  max-width: 60ch;
+  color: var(--ink-soft);
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+/* ---------------------------------------
+   Footer
+--------------------------------------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 28px 24px;
+}
+
+.site-footer p {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+/* ---------------------------------------
+   Responsive
+--------------------------------------- */
+@media (max-width: 480px) {
+  nav a { margin-left: 16px; font-size: 0.85rem; }
+  .hero { padding: 64px 20px 48px; }
+}
+
+/* ---------------------------------------
+   Reduced motion
+--------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

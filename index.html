@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="logo">YN</span>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Your Name</h1>
+      <p class="hero-sub">A short line about what you do — designer, developer, photographer, whatever fits. Replace this with your own tagline.</p>
+      <a class="btn" href="#work">See my work</a>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section wrap">
+      <h2>Work</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-thumb"></div>
+          <h3>Project One</h3>
+          <p>One or two sentences describing the project, what it does, and what you used to build it.</p>
+        </article>
+        <article class="card">
+          <div class="card-thumb"></div>
+          <h3>Project Two</h3>
+          <p>One or two sentences describing the project, what it does, and what you used to build it.</p>
+        </article>
+        <article class="card">
+          <div class="card-thumb"></div>
+          <h3>Project Three</h3>
+          <p>One or two sentences describing the project, what it does, and what you used to build it.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section wrap about">
+      <h2>About</h2>
+      <p>A short paragraph about who you are, what you're interested in, and what you're currently learning or working on. Keep it human — this is the part people actually read.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section wrap contact">
+      <h2>Contact</h2>
+      <p>Say hello or find me elsewhere:</p>
+      <ul class="contact-list">
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Your Name.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

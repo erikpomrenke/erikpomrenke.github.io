@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SWAP: page title, format as "Article Title | Erik Pomrenke" -->
+  <title>Article Title Goes Here | Erik Pomrenke</title>
+  <!-- SWAP: 1-2 sentence summary for search engines / social previews -->
+  <meta name="description" content="One or two sentence summary of the article for search results and link previews.">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- SWAP: canonical URL for this specific article -->
+  <link rel="canonical" href="https://erikpomrenke.github.io/blog/article-slug.html" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="logo">Erik Pomrenke: Portfolio</span>
+      <nav>
+        <a href="index.html#data-viz">Data</a>
+        <a href="index.html#writing">Writing</a>
+        <a href="index.html#img-gallery">Photography</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <!-- OPTIONAL: link back to a blog index or the Writing section -->
+      <a class="article-back" href="index.html#writing">&larr; Back to writing</a>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <!-- SWAP: src and alt text. Remove this whole <div> if an article has no hero image. -->
+    <div class="article-hero">
+      <img src="Assets/article-hero.webp" alt="Describe the hero image here">
+    </div>
+
+    <!-- META + HEADLINE -->
+    <section class="wrap article-meta article-header">
+      <!-- SWAP: date and, optionally, a category tag -->
+      <span class="article-date">Published August 9, 2026</span>
+      <span class="article-tag">SEO</span>
+
+      <!-- SWAP: article title -->
+      <h1>Article Title Goes Here</h1>
+
+      <!-- OPTIONAL: one-line dek/subtitle under the H1. Delete <p> if unused. -->
+      <p class="article-dek">A short standfirst that expands on the headline and pulls the reader into the piece.</p>
+    </section>
+
+    <!-- ARTICLE BODY -->
+    <article class="article-body">
+      <p>
+        Opening paragraph. This template uses a narrower reading column (68 characters)
+        than the rest of the site, since long-form text is easier to read in a tighter
+        measure. Swap this paragraph, and everything below it, for your real content.
+      </p>
+
+      <p>
+        A second paragraph to show normal body copy spacing. Links inside the body,
+        like <a href="#">this one</a>, inherit the underline style already used
+        sitewide.
+      </p>
+
+      <h2>A section heading</h2>
+      <p>
+        Use <code>&lt;h2&gt;</code> for major section breaks and <code>&lt;h3&gt;</code>
+        for sub-points within a section. Both use the same serif display font as your
+        site's H1 and section headings.
+      </p>
+
+      <figure>
+        <!-- SWAP: in-body image, if any. Delete the whole <figure> if not needed. -->
+        <img src="Assets/example-inline.webp" alt="Describe the image here">
+        <figcaption>Optional caption describing the image above.</figcaption>
+      </figure>
+
+      <h3>A sub-heading</h3>
+      <p>
+        More body copy. Lists are styled too:
+      </p>
+      <ul>
+        <li>First point</li>
+        <li>Second point</li>
+        <li>Third point</li>
+      </ul>
+
+      <blockquote>
+        A pulled quote or highlighted excerpt can go here, set off from the body copy.
+      </blockquote>
+
+      <p>
+        Closing paragraph of the article.
+      </p>
+
+      <hr>
+
+      <!-- OPTIONAL: author note / call to action at the end -->
+      <p class="article-endnote">
+        Written by Erik Pomrenke. Have thoughts? <a href="mailto:erikpomrenke@gmail.com">Get in touch</a>.
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Erik Pomrenke</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6a647a6edb6d4382aaba1c46e43adcdc"}'></script>
+</body>
+</html>

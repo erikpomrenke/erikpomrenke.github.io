@@ -293,7 +293,7 @@ div.gallery-item div.desc {
 /* Hero banner image */
 .article-hero {
   width: 100%;
-  max-height: 440px;
+  height: 440px;
   overflow: hidden;
   margin-top: 8px;
 }
@@ -302,11 +302,12 @@ div.gallery-item div.desc {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
 @media (max-width: 700px) {
-  .article-hero { max-height: 280px; }
+  .article-hero { height: 280px; }
 }
 
 /* Meta + headline */
